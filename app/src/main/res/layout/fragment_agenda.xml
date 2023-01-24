@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_lighter"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".ui.agenda.AgendaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mondayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mon"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/tuesdayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tue"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/wednesdayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wed"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/thursdayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thu"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/fridayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fri"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+        <!--            style="?android:attr/buttonBarButtonStyle" -->
+
+
+        <Button
+            android:id="@+id/saturdayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sat"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/sundayBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="461dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sun"
+            android:textColor="@color/brown_second_primary"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/mon" />
+
+    <TextView
+        android:id="@+id/noTasksLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/listTask"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        tools:listitem="@layout/task_row" />
+
+
+</LinearLayout>

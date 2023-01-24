@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_lighter"
+    android:orientation="vertical"
+    tools:context=".ui.tasks.TaskFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/all_tasks"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/noTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/there_are_no_tasks_available_add_some_new_ones"
+        android:textAlignment="center"
+        tools:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/taskList1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        tools:listitem="@layout/task_row" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/set_freetime" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/from"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/freeTimeStartBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/hh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/hyphen"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/freeTimeEndBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/hh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/to"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addTask"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_task"
+            android:textColor="@color/brown_second_primary" />
+
+        <Button
+            android:id="@+id/clearTasks"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all_tasks"
+            android:textColor="@color/brown_second_primary" />
+    </LinearLayout>
+
+
+</LinearLayout>
